@@ -1,0 +1,8 @@
+Copyright © 2023 Magic Leap, Inc. All rights reserved.
+
+Use of the digital content and 3D files (“Design Software”) provided in this download package is governed by the Magic Leap 2 
+Software License Agreement available at https://www.magicleap.com/software-license-agreement-ml2 ("Software License”). 
+Your right to use the Design Software is conditioned upon your acceptance of the Software License.
+
+ALL USE OF THE DESIGN SOFTWARE IS AT YOUR OWN RISK. TO THE MAXIMUM EXTENT PERMITTED BY LAW, 
+MAGIC LEAP IS NOT LIABLE OR RESPONSIBLE FOR YOUR APPLICATIONS.
