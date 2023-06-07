@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/MagicLeap/PhotonFusionExample/Scenes/MarkerCollocation.unity
+    path: Assets/MagicLeap/PhotonFusionExample/Scenes/MarkerColocation.unity
     guid: a4be633e9e8ddb647b254861584a87ac
   - enabled: 0
-    path: Assets/MagicLeap/PhotonFusionExample/Scenes/MapCollocation.unity
+    path: Assets/MagicLeap/PhotonFusionExample/Scenes/MapColocation.unity
     guid: d86708d18cc26a14eae7d7f8e4334ce6
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: b298dfbbd490d8841812be7a977f068a,
