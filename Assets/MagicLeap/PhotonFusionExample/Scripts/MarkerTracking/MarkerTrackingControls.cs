@@ -42,9 +42,9 @@ namespace MagicLeapNetworkingDemo.MarkerTracking
 
 		void Start()
 		{
-			_markerTracker = BaseMarkerTrackerBehaviour.Instance;
-			OnFollowClicked();
 			
+			OnFollowClicked();
+			StartCoroutine(FindMarker());
 			_instructionsPanel.gameObject.SetActive(true);
 			_calibrationPanel.gameObject.SetActive(false);
 			
@@ -52,6 +52,19 @@ namespace MagicLeapNetworkingDemo.MarkerTracking
 			_followButton.onClick.AddListener(OnFollowClicked);
 			
 			SubscribeToInput();
+		}
+
+		IEnumerator FindMarker()
+		{
+			_markerTracker = BaseMarkerTrackerBehaviour.Instance;
+			while (_markerTracker== null)
+			{
+				_markerTracker = BaseMarkerTrackerBehaviour.Instance;
+				Debug.LogWarning("Searching for marker tracker...");
+				yield return null;
+			}
+
+			Debug.LogWarning("<color=green>marker tracker found.</color>");
 		}
 
 		private void SubscribeToInput()

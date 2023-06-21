@@ -84,6 +84,8 @@ namespace MagicLeapNetworkingDemo.Editor
 			{
 				System.IO.Compression.ZipFile.ExtractToDirectory(fullPathToZip, fullPathToDestination);
 				AssetDatabase.Refresh();
+				Client.Resolve();
+				
 			}
 		}
 

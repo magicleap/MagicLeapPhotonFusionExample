@@ -30,7 +30,9 @@ namespace MagicLeap.Networking
 
         public string roomName = "SampleFusion-MagicLeap2";
         public bool connectOnStart;
-
+        public Action<string> ConnectionFailed;
+        public Action DisconnectedFromServer;
+        public Action ConnectedToServer;
         [Header("Fusion settings")]
         [Tooltip("Fusion runner. Automatically created if not set")]
         public NetworkRunner runner;
@@ -114,10 +116,21 @@ namespace MagicLeap.Networking
 
         public void OnPlayerLeft(NetworkRunner runner, PlayerRef player) { }
 
-        public void OnConnectedToServer(NetworkRunner runner) { }
+        public void OnConnectedToServer(NetworkRunner runner)
+        {
+            ConnectedToServer?.Invoke();
+        }
         public void OnShutdown(NetworkRunner runner, ShutdownReason shutdownReason) { }
-        public void OnDisconnectedFromServer(NetworkRunner runner) { }
-        public void OnConnectFailed(NetworkRunner runner, NetAddress remoteAddress, NetConnectFailedReason reason) { }
+
+        public void OnDisconnectedFromServer(NetworkRunner runner)
+        {
+            DisconnectedFromServer?.Invoke();
+        }
+
+        public void OnConnectFailed(NetworkRunner runner, NetAddress remoteAddress, NetConnectFailedReason reason)
+        {
+            ConnectionFailed?.Invoke($"Connection Failed: {reason}");
+        }
         public void OnInput(NetworkRunner runner, NetworkInput input) { }
         public void OnInputMissing(NetworkRunner runner, PlayerRef player, NetworkInput input) { }
         public void OnConnectRequest(NetworkRunner runner, NetworkRunnerCallbackArgs.ConnectRequest request, byte[] token) { }

@@ -414,7 +414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 2
+  m_Version: 3
   m_UsePipelineSettings: 1
   m_AdditionalLightsShadowResolutionTier: 2
   m_LightLayerMask: 1
@@ -424,7 +424,7 @@ MonoBehaviour:
   m_ShadowRenderingLayers: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 1
+  m_SoftShadowQuality: 2
 --- !u!1 &603375775
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,6 +466,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1662075093}
     m_Modifications:
+    - target: {fileID: 2090076763714845189, guid: 63d41041cface864cbc3c324765868e6,
+        type: 3}
+      propertyPath: m_text
+      value: Not Connected To Photon
+      objectReference: {fileID: 0}
     - target: {fileID: 2090076764477245125, guid: 63d41041cface864cbc3c324765868e6,
         type: 3}
       propertyPath: m_RootOrder
@@ -540,6 +545,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Moveable Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090076765059844014, guid: 63d41041cface864cbc3c324765868e6,
+        type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1062,6 +1072,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 306372738}
     m_Modifications:
+    - target: {fileID: 2090076763714845189, guid: 63d41041cface864cbc3c324765868e6,
+        type: 3}
+      propertyPath: m_text
+      value: Not Connected To Photon
+      objectReference: {fileID: 0}
     - target: {fileID: 2090076764477245125, guid: 63d41041cface864cbc3c324765868e6,
         type: 3}
       propertyPath: m_RootOrder
@@ -1136,6 +1151,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Moveable Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090076765059844014, guid: 63d41041cface864cbc3c324765868e6,
+        type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1225,6 +1245,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 603375776}
     m_Modifications:
+    - target: {fileID: 2090076763714845189, guid: 63d41041cface864cbc3c324765868e6,
+        type: 3}
+      propertyPath: m_text
+      value: Not Connected To Photon
+      objectReference: {fileID: 0}
     - target: {fileID: 2090076764477245125, guid: 63d41041cface864cbc3c324765868e6,
         type: 3}
       propertyPath: m_RootOrder
@@ -1300,6 +1325,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Moveable Cube
       objectReference: {fileID: 0}
+    - target: {fileID: 2090076765059844014, guid: 63d41041cface864cbc3c324765868e6,
+        type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1313,6 +1343,76 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 556147534609547638, guid: 4b7b31e30b61762449b60c46c68c18cc,
+        type: 3}
+      propertyPath: m_PositionInput.m_Action.m_Id
+      value: ce78dce0-18b0-4c00-9447-e580e8bc1d12
+      objectReference: {fileID: 0}
+    - target: {fileID: 556147534609547638, guid: 4b7b31e30b61762449b60c46c68c18cc,
+        type: 3}
+      propertyPath: m_RotationInput.m_Action.m_Id
+      value: 23c4c17c-cee1-4c36-88fd-a57ca8085454
+      objectReference: {fileID: 0}
+    - target: {fileID: 556147534609547638, guid: 4b7b31e30b61762449b60c46c68c18cc,
+        type: 3}
+      propertyPath: m_PositionInput.m_Action.m_Name
+      value: Position Input
+      objectReference: {fileID: 0}
+    - target: {fileID: 556147534609547638, guid: 4b7b31e30b61762449b60c46c68c18cc,
+        type: 3}
+      propertyPath: m_RotationInput.m_Action.m_Name
+      value: Rotation Input
+      objectReference: {fileID: 0}
+    - target: {fileID: 556147534609547638, guid: 4b7b31e30b61762449b60c46c68c18cc,
+        type: 3}
+      propertyPath: m_TrackingStateInput.m_Action.m_Id
+      value: e647db30-1b18-4f50-9f11-46b7f9309793
+      objectReference: {fileID: 0}
+    - target: {fileID: 556147534609547638, guid: 4b7b31e30b61762449b60c46c68c18cc,
+        type: 3}
+      propertyPath: m_TrackingStateInput.m_Action.m_Name
+      value: Tracking State Input
+      objectReference: {fileID: 0}
+    - target: {fileID: 556147534609547638, guid: 4b7b31e30b61762449b60c46c68c18cc,
+        type: 3}
+      propertyPath: m_PositionInput.m_Action.m_SingletonActionBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 556147534609547638, guid: 4b7b31e30b61762449b60c46c68c18cc,
+        type: 3}
+      propertyPath: m_RotationInput.m_Action.m_SingletonActionBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 556147534609547638, guid: 4b7b31e30b61762449b60c46c68c18cc,
+        type: 3}
+      propertyPath: m_PositionInput.m_Action.m_SingletonActionBindings.Array.data[0].m_Id
+      value: fd560ebc-a009-4051-82f9-93fd9cc2feca
+      objectReference: {fileID: 0}
+    - target: {fileID: 556147534609547638, guid: 4b7b31e30b61762449b60c46c68c18cc,
+        type: 3}
+      propertyPath: m_RotationInput.m_Action.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 8b1aa2e1-ecc0-4f31-85b6-bd63b463cd08
+      objectReference: {fileID: 0}
+    - target: {fileID: 556147534609547638, guid: 4b7b31e30b61762449b60c46c68c18cc,
+        type: 3}
+      propertyPath: m_PositionInput.m_Action.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <XRHMD>/centerEyePosition
+      objectReference: {fileID: 0}
+    - target: {fileID: 556147534609547638, guid: 4b7b31e30b61762449b60c46c68c18cc,
+        type: 3}
+      propertyPath: m_RotationInput.m_Action.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <XRHMD>/centerEyeRotation
+      objectReference: {fileID: 0}
+    - target: {fileID: 556147534609547638, guid: 4b7b31e30b61762449b60c46c68c18cc,
+        type: 3}
+      propertyPath: m_PositionInput.m_Action.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Position Input
+      objectReference: {fileID: 0}
+    - target: {fileID: 556147534609547638, guid: 4b7b31e30b61762449b60c46c68c18cc,
+        type: 3}
+      propertyPath: m_RotationInput.m_Action.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Rotation Input
+      objectReference: {fileID: 0}
     - target: {fileID: 2408004626713862601, guid: 4b7b31e30b61762449b60c46c68c18cc,
         type: 3}
       propertyPath: m_Name
@@ -1488,6 +1588,11 @@ PrefabInstance:
       propertyPath: _desktopRig
       value: 
       objectReference: {fileID: 6576317625673081306}
+    - target: {fileID: 2620892672312268187, guid: 4fb8466322a31c147ae36f4f903eaa55,
+        type: 3}
+      propertyPath: _magicLeapRig
+      value: 
+      objectReference: {fileID: 4785960936823609616}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1684,11 +1789,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6420312414655734290, guid: ddab83da00e3fa94285c2bdfd7781aa8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6420312414655734294, guid: ddab83da00e3fa94285c2bdfd7781aa8,
         type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 69381326}
+    - target: {fileID: 6420312414655734294, guid: ddab83da00e3fa94285c2bdfd7781aa8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420312414772962358, guid: ddab83da00e3fa94285c2bdfd7781aa8,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420312414772962358, guid: ddab83da00e3fa94285c2bdfd7781aa8,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420312414772962358, guid: ddab83da00e3fa94285c2bdfd7781aa8,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

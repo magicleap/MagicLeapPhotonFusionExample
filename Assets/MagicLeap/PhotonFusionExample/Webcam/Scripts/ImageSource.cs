@@ -112,14 +112,21 @@ public sealed class ImageSource : MonoBehaviour
             // Webcam source type:
             // Create a WebCamTexture and start capturing.
             _webcam = new WebCamTexture(_webcamName, _webcamResolution.x, _webcamResolution.y, _webcamFrameRate);
-
+            if (_webcam == null)
+            {
+                Debug.LogError("Failed to connect to camera.");
+            }
 
         
     }
 
     public void StartCamera()
     {
-
+        if (_webcam == null)
+        {
+            Debug.LogError("Camera is not connected so it cannot be started.");
+            return;
+        }
         _webcam.Play();
         _rotateMaterial.SetFloat("_RotationDegrees", -_webcam.videoRotationAngle);
 
@@ -140,6 +147,11 @@ public sealed class ImageSource : MonoBehaviour
 
     public void StopCamera()
     {
+        if (!_running)
+        {
+            Debug.LogError("Camera is not running so it cannot be stopped.");
+            return;
+        }
         _webcam.Stop();
         _running = false;
     
