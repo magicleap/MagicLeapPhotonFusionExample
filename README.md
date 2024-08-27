@@ -1,3 +1,6 @@
+> [!WARNING]
+> This repository is archived and no longer actively maintained. 
+
 # Magic Leap Colocation With Photon Fusion
 
 This repository contains an example project demonstrating how to use Photon Fusion to create a colocation application for the Magic Leap 2. This project provides a simple multiuser and colocation application using Photon Fusion. The example is designed to work with the Magic Leap 2 and demonstrates the basics of creating a shared AR experience.
